@@ -223,6 +223,5 @@ __marimo__/
 draft/
 sent/
 
-# config and API keys
+# API key
 config.yaml
-.apikey
