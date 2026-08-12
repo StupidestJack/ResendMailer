@@ -4,7 +4,8 @@ import subprocess
 from pathlib import Path
 
 config_file = Path('config.yaml')
-config = yaml.safe_load('''editor: vim''')
+config = yaml.safe_load('''editor: vim
+api_key: re_abcdefg''')
 if config_file.exists():
     with open('config.yaml', 'r') as f:
         config = yaml.safe_load(f)
