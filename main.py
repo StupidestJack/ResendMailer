@@ -3,9 +3,15 @@ import lib.markdown2 as md
 import subprocess
 import uuid
 import tempfile
-from sys import exit as errexit
 from shutil import copy2
 from pathlib import Path
+import sys
+from pathlib import Path
+
+# 將專案目錄下的 lib/ 放入 Python 的搜尋路徑中最優先位置
+lib_path = Path(__file__).parent / "lib"
+sys.path.insert(0, str(lib_path))
+
 import resend
 
 default = '''editor: vim
