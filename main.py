@@ -6,11 +6,7 @@ import tempfile
 from sys import exit as errexit
 from shutil import copy2
 from pathlib import Path
-try:
-    import resend
-except ImportError:
-    print("""Cannot load Resend, please install Resend.""")
-    errexit(1)
+import resend
 
 default = '''editor: vim
 api_key: re_YourResendAPIKey
